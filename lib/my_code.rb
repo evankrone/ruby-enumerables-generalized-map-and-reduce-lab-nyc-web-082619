@@ -5,7 +5,7 @@ def map(source_array)
     new.push(yield(source_array[i]))
     i += 1
   end
-  new
+  p new
 end
 
 def reduce(source_array, starting_point=nil)
@@ -20,5 +20,5 @@ def reduce(source_array, starting_point=nil)
     new = yield(new, starting_point[i])
     i += 1
   end
-  new
+  p new
 end
